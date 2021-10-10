@@ -1,9 +1,12 @@
-import React from "react";
 import Layout from "../components/Layout";
+import useNavColor from "../helpers/useNavColor";
+import { navColors } from "../utils/dataColors";
 
-const contact = () => {
+const Contact = () => {
+  const navColor = useNavColor(navColors);
+
   return (
-    <Layout>
+    <Layout color={navColor} description="contact page">
       <div>
         <h1>Contact</h1>
       </div>
@@ -11,4 +14,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

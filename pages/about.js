@@ -1,9 +1,12 @@
-import React from "react";
 import Layout from "../components/Layout";
+import useNavColor from "../helpers/useNavColor";
+import { navColors } from "../utils/dataColors";
 
-const about = () => {
+const About = () => {
+  const navColor = useNavColor(navColors);
+
   return (
-    <Layout>
+    <Layout color={navColor} description="about page">
       <div>
         <h1>About</h1>
       </div>
@@ -11,4 +14,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

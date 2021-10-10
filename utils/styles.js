@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   navbar: {
+    backgroundColor: ({ color }) => color,
     "& a": {
       color: "#ffffff",
       marginLeft: 10,
@@ -12,13 +13,27 @@ const useStyles = makeStyles({
   },
 
   main: {
-    minHeight: "80vh",
+    minHeight: "90vh",
+  },
+
+  section: {
+    display: "flex",
+    marginTop: 10,
+    marginBottom: 10,
+    fontWeight: "bold",
+    fontSize: "1.2rem",
+  },
+
+  images: {
+    borderRadius: 8,
   },
 
   footer: {
-    marginTop: 10,
-    marginBottom: 10,
-    textAlign: "center",
+    backgroundColor: ({ color }) => color,
+    display: "flex",
+    justifyContent: "center",
+    marginTop: 20,
+    height: "3rem",
   },
 });
 
