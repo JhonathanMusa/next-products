@@ -10,10 +10,13 @@ import useStyles from "../../utils/styles";
 
 export default function ProductDetails() {
   const classes = useStyles();
+
   const { query } = useRouter();
   const { title } = query;
 
   const product = data.products.find((a) => a.title === title);
+
+  
   if (!product) {
     return <div>Product Not Found</div>;
   }

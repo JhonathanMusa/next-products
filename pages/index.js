@@ -16,6 +16,7 @@ import useNavColor from "../helpers/useNavColor";
 import data from "../utils/data";
 import { navColors } from "../utils/dataColors";
 
+
 export default function Home() {
   const navColor = useNavColor(navColors);
 
